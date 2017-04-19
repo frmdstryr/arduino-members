@@ -109,6 +109,27 @@ void onWeatherChanged(JsonObject &change) {
 ```
 
 
+And of course you must update the properties however you normally do.
+
+```cpp
+
+Demo demo;
+
+setup() {
+    // Configure pins
+    pinMode(LED_PIN,OUTPUT);
+}
+
+loop() {
+    // Read temp and humidity from sensor, in loop, interupts, however you roll
+    // Note: Even though these are is always being set, the callback only fires when the value actually changes
+    temp = TempSensor.read(); 
+    humidity = HumiditySensor.read();
+    // etc...
+}
+```
+
+This library really helps simplify code that must set a system to a specific state, simply update the member values and let the callbacks do the rest.
 
 #### Dependencies
 
