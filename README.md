@@ -1,6 +1,6 @@
 # Arduino Members
 
-A library for defining `observable members` which are properties can be  watched or `observed` for changes to properly keep state in sync within an application. 
+A library for defining `observable members` which are properties that can be  watched or `observed` for changes to properly keep state in sync within an application. 
 
 Orignally forked from [https://github.com/tomstewart89/Callback](https://github.com/tomstewart89/Callback)
 
