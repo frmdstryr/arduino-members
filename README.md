@@ -89,17 +89,17 @@ void onWeatherChanged(JsonObject &change) {
     change.printTo(Serial);
     String prop = change['name'];
     
-   if (prop.equals("temp") {
+   if (prop.equals("temp")) {
         // We know the temp changed
         Serial.print("Temp changed to: ");
         Serial.println(temp);
-        if (temp>75) {
+        if (temp > 75) {
             Serial.println("Temp is hot");
             ledActive = true; // Triggers onLedChanged  if it was previously false, otherwise does nothing
         } else if (temp < 60) {
             ledActive = false; // Triggers onLedChanged if it was previously true, otherwise does nothing
         }
-   } else if (prop.equals("humidity") {
+   } else if (prop.equals("humidity")) {
         Serial.print("Humidity changed to: ");
         Serial.println(humidity);
    }
