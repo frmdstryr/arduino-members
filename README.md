@@ -66,10 +66,10 @@ Finally, in your callbacks, handle the changes.  A change is a JsonObject with t
 
 ```json
 {
-    'name':<property name>,
-    'type':<change that occured>, 
-    'value': <current value>, 
-    'old':<previous value>,
+    "name":"property name",
+    "type":"update", 
+    "value': "<current value>", // Type is same as member type   
+    "old":"<previous value>",  // Type is same as member type 
 } 
 
 ```
