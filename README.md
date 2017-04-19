@@ -123,8 +123,8 @@ setup() {
 loop() {
     // Read temp and humidity from sensor, in loop, interupts, however you roll
     // Note: Even though these are is always being set, the callback only fires when the value actually changes
-    temp = TempSensor.read(); 
-    humidity = HumiditySensor.read();
+    demo.temp = TempSensor.read(); 
+    demo.humidity = HumiditySensor.read();
     // etc...
 }
 ```
